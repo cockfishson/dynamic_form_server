@@ -2,7 +2,7 @@ import { EventServices } from "../services/eventServices.js";
 
 export class EventController {
   static list(req, res) {
-    const events = EventServices.getAllEvents();
+    const events = EventServices.getEventsList();
     res.status(200).json(events);
   }
 
